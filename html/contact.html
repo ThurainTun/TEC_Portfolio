@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/63cfdeb872.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+
+        .SAcontainerRR{
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+        }
+        .SAimageRR{
+            width: 100%;
+            /* height: 100%; */
+            position: relative;
+            background-color: rgb(81, 90, 110) ;
+            z-index: 2;
+        }
+        .SAimageRR img{
+            width: 100%;
+            /* height: 100%; */
+            z-index: 1;
+            opacity: 30%;
+        }
+        .SAcontentRR{
+            position: absolute;
+            color: #fff;z-index: 3;
+            text-align: center;
+        }
+        .SAcontentRR a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .SAcontentRR a:hover{
+            color: #06daed;
+        }
+        /* ---sectionD--- */
+
+        .SDbtnPJ{
+            color: rgb(188, 187, 187);
+            background-color: #eeeeee;
+        }
+        .SDbtnColor{
+            color:#fff;
+            background-color: #06daed;
+        }
+
+        /* ---section0--- */
+
+        .section0{
+            width: 80%;
+            margin:50px auto;
+        }
+        
+        .S0content{
+            text-align: center;
+            margin: 20px 0;
+            margin-bottom: 35px;
+        }
+        .S0content h3{
+            font-size: 25px;
+            font-weight: bold;
+        }
+        .S0content p{
+            font-size: 14px;
+            color: dimgray;
+            letter-spacing: -0.3px;
+            word-spacing: 1px;
+            margin: 20px 0;
+        }
+        .S0content p a{
+            text-decoration: none;
+        }
+        .S0container{
+            max-width: 700px;
+            margin:0 auto;
+        }
+        .S0Cbox1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        label{
+            font-size: 15px;
+            color: dimgray;
+            margin-bottom: 12px;
+        }
+        .S0Icontainer1{
+            width: 100%;
+            display: inline-block ;
+            margin: 10px;
+        }
+        .S0input1{
+            width: 100%;
+            background-color: #eeeeee;
+            display: block;
+            border-radius: 3px;
+            border: none;
+            padding:8px 12px;
+            color: black;
+        }
+        .S0Icontainer2{
+            margin: 10px;
+            margin-top: 12px;
+        }
+        .S0Icontainer3{
+            margin: 10px;
+            margin-top: 15px;
+
+        }
+        .S0Icontainer3 textarea{
+            display: block;
+            width: 100%;
+            height: 180px;
+            border-radius: 3px;
+            border: none;
+            background-color: #eeeeee;
+            color: black;
+            padding: 10px;
+        }
+        .S0btn{
+            font-size: 14px;
+            margin: 10px;
+            padding: 9px 30px;
+            border-radius: 3px;
+            background-color: #06daed;
+            border: none;
+        }
+
+        /* ----responsive----- */
+
+        @media(max-width:634px){
+
+        .section0{
+            width: 88%;
+            margin:40px auto;
+        }
+        .S0content h3{
+            font-size: 23px;
+        }
+        .S0content p{
+            font-size: 13px;
+        }
+        label{
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .S0Icontainer1{
+            margin: 10px;
+            font-size: 14px;
+        }
+        .S0input1{
+            padding:6px 12px;
+        }
+        .S0Icontainer2{
+            margin: 10px;
+            margin-top: 8px;
+            font-size: 14px;
+        }
+        .S0Icontainer3{
+            margin: 10px;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        .S0Icontainer3 textarea{
+            height: 100px;
+            padding: 10px;
+        }
+        }
+
+        @media(max-width:343px){
+
+        .section0{
+            width: 90%;
+            margin:30px auto;
+        }
+        .S0content h3{
+            font-size: 23px;
+        }
+        .S0content p{
+            font-size: 12px;
+        }
+        .S0Icontainer1{
+            margin: 10px;
+            font-size: 14px;
+        }
+        .S0input1{
+            padding:6px 12px;
+            letter-spacing: -1px;
+            word-spacing: -1px;
+        }
+        .S0Icontainer2{
+            margin: 10px;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+        .S0Icontainer3{
+            margin: 10px;
+            margin-top: 12px;
+            font-size: 14px;
+        }
+        .S0Icontainer3 textarea{
+            height: 100px;
+            padding: 10px;
+        }
+        }
+    </style>
+</head>
+<body>
+
+    <!---------  nav----------->
+
+    <nav class="nav">
+        <div class="navLeft">
+            <span >
+                <i class="fa-solid fa-envelope"></i>
+            </span>
+            <span style="margin:7px">contact@mial.com</span>
+            <div class="navLeft2">
+                <span >
+                    <i class="fa-solid fa-phone"></i>
+                </span>
+                <span>+0011223495</span>
+            </div>
+        </div>
+        <div class="navRight">
+            <ul>
+                <li class="navRight1">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <!-- line -->
+
+    <div class="line"></div>
+
+    <!----------- Main nav --------->
+
+    <nav class="mainNav">
+        <div class="mNavLeft">
+            <div class="mNavLogo">
+                <img src="../Images/logo.png" alt="">
+            </div>
+        </div>
+        <div class="mNavRight">
+            
+            <ul class="mNavRight-1">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html" >About</a>
+                </li>
+                <li>
+                    <a href="./services.html">Services</a>
+                </li>
+                <li>
+                    <a href="./projects.html" >Projects</a>
+                </li>
+                <li>
+                    <a href="./contact.html" style="color: #06daed;">Contact</a>
+                </li>
+            </ul>
+                   <!-- /* testing area start*/ -->
+         <div class="navberIcon">
+
+            <div class="container">
+                <div class="hamburgerContainer">
+                    <div class="hamburger lineA"></div>
+                    <div class="hamburger lineB"></div>
+                    <div class="hamburger lineC"></div>
+                </div>
+        </div>
+            <div class="menuContainer">
+                <ul>
+                    <li> <a href="../index.html" class="navIcon">Home</a></li>
+                    <li> <a href="./about.html" class="navIcon">About</a></li>
+                    <li> <a href="./services.html" class="navIcon">Services</a></li>
+                    <li><a href="./projects.html" class="navIcon">Projects</a></li>
+                    <li> <a href="./contact.html" class="navIcon"> Contact</a></li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /* testing area end */ -->
+            
+        </div>
+    </nav>
+
+    <!------------ sectionA --------->
+
+    <section class="sectionA ">
+        <div class="SAcontainerRR">
+            <div class="SAimageRR">
+                <img src="../Images/Slider 3.jpg" alt="">
+            </div>
+            <div class="SAcontentRR">
+                <p><a href="../index.html">Home</a> . <span> Contact</span></p>
+                <h3>Contact</h3>
+            </div>
+        </div>
+    </section>
+
+    <!-- section0 -->
+
+    <section class="section0">
+        <div class="S0content">
+            <h3>Stay in Touch</h3>
+            <p>Just say hello or drop us a line. You can manualy send us email <a href="">on email@.mail.com</a> </p>
+        </div>
+        <div class="S0container">
+            <div class="S0Cbox1">
+                <div class="S0Icontainer1">
+                    <label for="">Name</label>
+                    <input type="text" placeholder="Enter name..." class="S0input1"> 
+                </div>
+
+                <div class="S0Icontainer1">
+                    <label for="">Email</label>
+                    <input type="email" placeholder="Email address..." class="S0input1">
+                </div>
+            </div>
+            
+            <div class="S0Icontainer2">
+                <label for="">Subject</label>
+                <input type="text" placeholder="Subject..." class="S0input1">
+            </div>
+
+            <div class="S0Icontainer3">
+                <label for="">Messages</label>
+                <textarea name="" placeholder="Enter Messages..."></textarea>
+            </div>
+
+            <button type="button" class="btn btn-primary S0btn">Submit</button>
+        </div>
+    </section>
+
+    <!---------footer ----------->
+    <!--I use 'a' Tag for some condition if you don't need, you can delete it--> 
+
+    <section class="footer">
+        <div class="Fcontainer">
+  
+            <div class="FCbox1">
+                <div class="FC1logo">
+                    <img src="../Images/logo.png" alt="">
+                </div>
+            </div>
+            <div class="FCbox2">
+                <div class="Fheader">
+                    <h3>Contact Information</h3>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <p>301 The Greenhouse, Custard Factory, London, E2 8DY.</p>
+                        </a>
+                        <a href="">
+                            <p>Email:example@mail.com</p>
+                        </a>
+                        <a href="">
+                            <p>Phone: +00 112323980</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="FCbox3">
+                <div>
+                    <h3>Company</h3>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <p>Career</p>
+                        </a>
+                        <a href="">
+                            <p>Resources</p>
+                        </a>
+                        <a href="">
+                            <p>New & Feed</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="FCbox4">
+                <div>
+                    <h3>Newsletter</h3>
+                </div>
+                <form >
+                    <input type="emal" placeholder="Enter your  Email">
+                    <button type="button" class="btn btn-primary">Submit</button>
+
+                </form>
+            </div>
+        </div>
+
+        <!--if you want another section for this part .you delete this code and open below code -->
+
+        <div class="Econtainer">
+            <div class="Eleft">
+                <p>Copyright 2020.All right reserved.</p>
+            </div>
+            <div class="Eright">
+                <div class="ERcontainer">
+                    <div class="ERCbox">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="ERCbox">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="ERCbox">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="ERCbox">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+    
+    
+    <!-- js -->
+    <script src="../js/script.js"></script>
+    <!-- bootstrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>

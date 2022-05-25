@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product</title>
+    <!-- fontawsome -->
+    <script src="https://kit.fontawesome.com/63cfdeb872.js" crossorigin="anonymous"></script>
+    <!-- bootstrap -->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+
+        .SAcontainerAB{
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+
+        }
+        .SAimageAB{
+            width: 100%;
+            /* height: 100%; */
+            position: relative;
+            background-color: rgb(81, 90, 110) ;
+            z-index: 2;
+        }
+        .SAimageAB img{
+            width: 100%;
+            /* height: 100%; */
+            z-index: 1;
+            opacity: 30%;
+        }
+        .SAcontentAB{
+            position: absolute;
+            color: #fff;z-index: 3;
+            text-align: center;
+        }
+        .SAcontentAB a{
+            text-decoration: none;
+            color: #fff;
+        }
+        .SAcontentAB a:hover{
+            color: #06daed;
+        }
+        
+        /* ---sectionD--- */
+
+        .SDbtnPJ{
+            color: rgb(188, 187, 187);
+            background-color: #eeeeee;
+        }
+        .SDbtnColor{
+            color:#fff;
+            background-color: #06daed;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!---------  nav----------->
+
+    <nav class="nav">
+        <div class="navLeft">
+            <span >
+                <i class="fa-solid fa-envelope"></i>
+            </span>
+            <span style="margin:7px">contact@mial.com</span>
+            <div class="navLeft2">
+                <span >
+                    <i class="fa-solid fa-phone"></i>
+                </span>
+                <span>+0011223495</span>
+            </div>
+        </div>
+        <div class="navRight">
+            <ul>
+                <li class="navRight1">
+                    <a href="">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-youtube"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        
+    </nav>
+
+    <!-- line -->
+
+    <div class="line"></div>
+
+    <!----------- Main nav --------->
+
+    <nav class="mainNav">
+        <div class="mNavLeft">
+            <div class="mNavLogo">
+                <img src="../Images/logo.png" alt="">
+            </div>
+        </div>
+        <div class="mNavRight">
+            
+            <ul class="mNavRight-1">
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./about.html" >About</a>
+                </li>
+                <li>
+                    <a href="./services.html" style="color: #06daed;">Services</a>
+                </li>
+                <li>
+                    <a href="./projects.html" >Projects</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+                   <!-- /* testing area start*/ -->
+         <div class="navberIcon">
+
+            <div class="container">
+                <div class="hamburgerContainer">
+                    <div class="hamburger lineA"></div>
+                    <div class="hamburger lineB"></div>
+                    <div class="hamburger lineC"></div>
+                </div>
+        </div>
+            <div class="menuContainer">
+                <ul>
+                    <li> <a href="../index.html" class="navIcon">Home</a></li>
+                    <li> <a href="./about.html" class="navIcon">About</a></li>
+                    <li> <a href="./services.html" class="navIcon">Services</a></li>
+                    <li><a href="./projects.html" class="navIcon">Projects</a></li>
+                    <li> <a href="./contact.html" class="navIcon"> Contact</a></li>
+                
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /* testing area end */ -->
+            
+        </div>
+    </nav>
+
+    <!------------ sectionA --------->
+
+    <section class="sectionA ">
+        <div class="SAcontainerAB">
+            <div class="SAimageAB">
+                <img src="../Images/Slider 3.jpg" alt="">
+            </div>
+            <div class="SAcontentAB">
+                <p><a href="../index.html">Home</a> . <span> Services</span></p>
+
+                <h3>Services</h3>
+            </div>
+        </div>
+    </section>
+
+ <!-- ----------sectionC --------------  -->
+
+ <section class="sectionC">
+    <h6>Our Services</h6>
+    <h3>See what you do for your <br> project</h3>
+    <div class="SCcontainer">
+        <div class="SCCbox">
+            <div class="SCCimg">
+                <img src="../Images/logos/service1.png" alt="">
+            </div>
+            <p>Web Developement</p>
+        </div>
+        <div class="SCCbox">
+            <div class="SCCimg">
+                <img src="../Images/logos/service2.png" alt="">
+            </div>
+            <p>Graphics Design</p>
+        </div>
+        <div class="SCCbox">
+            <div class="SCCimg">
+                <img src="../Images/logos/service3.png" alt="">
+            </div>
+            <p>SEO & Marketing</p>
+        </div>
+        <div class="SCCbox">
+            <div class="SCCimg">
+                <img src="../Images/logos/service4.png" alt="">
+            </div>
+            <p>Customer Services</p>
+        </div>
+        <div class="SCCbox">
+            <div class="SCCimg">
+                <img src="../Images/logos/service5.png" alt="">
+            </div>
+            <p>App Development</p>
+        </div>
+        <div class="SCCbox">
+            <div class="SCCimg">
+                <img src="../Images/logos/service6.png" alt="">
+            </div>
+            <p>UI/UX Design</p>
+        </div>
+        <div class="SCCbox">
+            <div class="SCCimg">
+                <img src="../Images/logos/service7.png" alt="">
+            </div>
+            <p>Product Design</p>
+        </div>
+        <div class="SCCbox">
+            <div class="SCCimg">
+                <img src="../Images/logos/services8.png" alt="">
+            </div>
+            <p>Data Analyst</p>
+        </div>
+    </div>
+</section>
+
+
+    <!---------footer ----------->
+    <!--I use 'a' Tag for some condition if you don't need, you can delete it--> 
+
+    <section class="footer">
+        <div class="Fcontainer">
+  
+            <div class="FCbox1">
+                <div class="FC1logo">
+                    <img src="../Images/logo.png" alt="">
+                </div>
+            </div>
+            <div class="FCbox2">
+                <div class="Fheader">
+                    <h3>Contact Information</h3>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <p>301 The Greenhouse, Custard Factory, London, E2 8DY.</p>
+                        </a>
+                        <a href="">
+                            <p>Email:example@mail.com</p>
+                        </a>
+                        <a href="">
+                            <p>Phone: +00 112323980</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="FCbox3">
+                <div>
+                    <h3>Company</h3>
+                </div>
+                <ul>
+                    <li>
+                        <a href="">
+                            <p>Career</p>
+                        </a>
+                        <a href="">
+                            <p>Resources</p>
+                        </a>
+                        <a href="">
+                            <p>New & Feed</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="FCbox4">
+                <div>
+                    <h3>Newsletter</h3>
+                </div>
+                <form >
+                    <input type="emal" placeholder="Enter your  Email">
+                    <button type="button" class="btn btn-primary">Submit</button>
+
+                </form>
+            </div>
+        </div>
+
+        <!--if you want another section for this part .you delete this code and open below code -->
+
+        <div class="Econtainer">
+            <div class="Eleft">
+                <p>Copyright 2020.All right reserved.</p>
+            </div>
+            <div class="Eright">
+                <div class="ERcontainer">
+                    <div class="ERCbox">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+                    <div class="ERCbox">
+                        <i class="fa-brands fa-twitter"></i>
+                    </div>
+                    <div class="ERCbox">
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                    <div class="ERCbox">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+        </div>
+
+    </section>
+
+    
+    
+    <!-- js -->
+    <script src="../js/script.js"></script>
+    <!-- bootstrap -->
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>

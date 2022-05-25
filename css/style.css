@@ -1,0 +1,1436 @@
+body {
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: white;
+}
+
+/* line */
+.line {
+  border-bottom: 1px solid rgba(128, 128, 128, 0.134);
+}
+
+/* -------nav-------- */
+
+.nav {
+  width: 75%;
+  height: 40px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  letter-spacing: 0.1px;
+  color: dimgray;
+  margin: 0 auto;
+}
+.navLeft {
+  display: inline-block;
+}
+.navLeft2 {
+  display: inline-block;
+}
+.navLeft i {
+  color: #08cddf;
+}
+.navRight {
+  display: inline-block;
+}
+.navRight ul {
+  margin: 0;
+}
+.navRight li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 10px;
+  border-right: 1px solid black;
+}
+.navRight i {
+  color: black;
+}
+
+/* ----------Main nav ----------*/
+
+.mainNav {
+  width: 75%;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0px;
+  margin: 0 auto;
+}
+.mNavLeft {
+  display: inline-block;
+}
+.mNavLogo img {
+  width: 57px;
+  height: 30px;
+}
+.mNavRight {
+  display: inline-block;
+}
+.mNavRight ul {
+  margin: 0;
+}
+.mNavRight li {
+  list-style: none;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 16px;
+}
+.mNavRight li a {
+  color: dimgray;
+  text-decoration: none;
+}
+.mNavRight li a:hover {
+  color: #08cddf;
+}
+.mNavRight-1 {
+  display: block;
+}
+/* .mNavRight-2 {
+  display: none;
+  font-size: 28px;
+  padding-right: 20px;
+  color: dimgray;
+  cursor: pointer;
+} */
+
+/* testing area start*/
+
+.navberIcon {
+    
+  display: none;
+}
+.container{
+  max-width: 100%;
+  background-color: black;
+  position: relative;
+  /* margin-bottom: 35px; */
+}
+.hamburgerContainer{
+  display: inline;
+  position: absolute;
+  right: 0px;
+  top: -16px;
+  z-index: 12;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom:50px ;
+}
+.hamburger{
+  width: 40px;
+  height: 4px;
+  background-color: dimgray;
+  margin: 6px 0;
+  border-radius: 5px;
+  
+}
+.menuContainer{
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;    
+    z-index: 11;
+    flex-direction: column;
+    justify-content: center;
+    background-color: gray;
+    padding: 10px;
+    text-align: center;
+  }
+  .menuContainer ul{
+    margin: 0 auto;
+    padding: 0;
+  }
+  .menuContainer li{
+    display: block;
+    width: 50%;
+    background-color: #fff;
+    font-size: 25px;
+    list-style: none;
+    transition: all 0.5s ease;
+    border-radius: 3px;
+    user-select: none;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 3px 3px #e3e3e3;
+  }
+  .menuContainer li a{
+    color: black ;
+    font-weight: bold;
+    padding: 10px 40px;
+    /* padding-right: ; */
+}
+@media(max-width:476px){
+
+  /* testing area navbar */
+
+  .menuContainer{
+    top:160px
+  }
+  .menuContainer li{
+    padding:10px 5px;
+    font-size: 20px;
+    margin: 10px auto;
+
+  }
+  .menuContainer li a{
+    padding: 10px 30px;
+    padding-left:20px ;
+  }
+}
+
+.menuContainer li:hover{
+  color: #06daed;
+}
+.navIcon{
+  text-decoration: none;
+  color: inherit;
+}
+.shoeMenu{
+  /* opacity: 1; */
+  display: block;
+}
+.lineA,.lineB, .lineC{
+  transition: all 0.5s ease;
+}
+.hide{
+  opacity: 0;
+}
+.rotate1{
+  transform: rotate(45deg) translate(5px,8px);
+}
+.rotate3{
+  transform: rotate(-45deg) translate(6px ,-8px );
+}
+.liTag.up{
+  transform: translateY(-100px);
+  transform: rotate(180deg);
+}
+/* testing area end */
+
+
+/* ----------sectionA --------*/
+
+.SAcontainer {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #06daed;
+}
+.SAimageBox {
+  width: 100%;
+  height: 450px;
+  background-color: rgb(51, 63, 82) !important;
+  z-index: 2 !important;
+}
+.SAimage {
+  width: 100% !important;
+  z-index: 1 !important;
+  opacity: 50% !important;
+}
+.SAcontext {
+  color: #fff !important;
+  bottom: 140px;
+}
+.SAcontext h1 {
+  font-size: 50px !important;
+  z-index: 3 !important;
+  letter-spacing: 0px !important;
+}
+.SAbtn {
+  background-color: inherit;
+  color: #fff;
+  font-size: 15px;
+}
+.SAsliderBox {
+  background-color: #06daed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 13px;
+  border-radius: 50%;
+}
+.SAslideBtn {
+  width: 12px;
+  height: 12px;
+}
+
+/*----------sectionB  -----------*/
+
+.sectionB {
+  width: 80%;
+  padding: 100px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.sectionB p {
+  font-size: 14px;
+  color: rgb(188, 187, 187);
+  letter-spacing: -0.3px;
+  word-spacing: 1px;
+}
+.SBleft {
+  width: 50%;
+  display: inline-block;
+  text-align: left;
+}
+.SBleft h3 {
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 35px;
+  margin-bottom: 20px;
+}
+.SBleft h3 span {
+  color: #08cddf;
+}
+.SBleft p {
+  font-size: 13px;
+  line-height: 23px;
+  word-spacing: -1px;
+  color: dimgray;
+}
+.btn1 {
+  background-color: #08cddf;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  padding: 8px 18px;
+}
+.btn1:hover {
+  background-color: #06daed;
+}
+.SBright {
+  width: 50%;
+  display: inline-block;
+}
+.SBimageBox {
+  /* width: 100%; */
+  max-width: 420px;
+  height: 270px;
+  margin: auto;
+  transform: skewX(-4deg);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.SBimageBox img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ----------sectionC -------------- */
+
+.sectionC {
+  width: 100%;
+  text-align: center;
+  background-color: #eeeeee;
+  padding: 50px 0;
+}
+.sectionC h6 {
+  font-size: 14px;
+  color: rgb(188, 187, 187);
+  letter-spacing: -0.3px;
+  word-spacing: 1px;
+  margin: 0;
+  padding: 15px 0;
+}
+.sectionC h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.SCCbox {
+  width: 20%;
+  display: inline-block;
+  margin-top: 20px;
+  padding: 20px 0;
+  border-radius: 20px;
+  transition:  all 0.5s;
+}
+.SCCbox:hover{
+  background-color: #06daed;
+  color: #fff;
+}
+.SCCimg{
+  width: 50px;
+  height: 50px;
+  margin: 10px auto;
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: #06daed;
+}
+.SCCimg img{
+  width: 100%;
+}
+.SCCbox p {
+  font-size: 16px;
+  word-spacing: -0.5px;
+}
+
+/* -------sectionD ----------- */
+
+.sectionD {
+  width: 100%;
+  padding: 30px 0;
+}
+.SDheader {
+  width: 76%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  padding: 45px 0;
+}
+.SDHleft {
+  display: inline-block;
+}
+.SDHleft h6 {
+  font-size: 14px;
+  color: rgb(188, 187, 187);
+  font-weight: 100;
+  margin: 0;
+  padding: 15px 0;
+}
+.SDHleft h3 {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+}
+.SDHright {
+  display: inline-block;
+}
+.SDHbtn {
+  color: #08cddf;
+  background-color: inherit;
+  border-color: #08cddf;
+}
+.SDHbtn:hover {
+  background-color: #06daed;
+}
+.SDcontainer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 40px;
+  margin: 0 auto;
+}
+.SDCbox {
+  width: 300px;
+  border: none;
+  border-radius: 7px;
+  overflow: hidden;
+  margin: 20px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.SDCbox img {
+  width: 100%;
+  border-radius: 7px;
+}
+.SDCbox:hover {
+  transform: translate(1px, -5px);
+}
+
+/* --------sectionE ---------- */
+
+.sectionE {
+  background-color: #eeeeee;
+}
+.SEcontainer {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.SElogoBox {
+  width: 100px;
+  padding: 58px 0px;
+  margin: 0px 35px;
+}
+.SElogoBox img {
+  width: 100%;
+}
+
+/* ---------footer ---------- */
+
+.footer {
+  width: 100%;
+  background-color: rgba(31, 31, 60, 0.9);
+}
+.Fcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #06daed;
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+.Fcontainer h3 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.Fcontainer p {
+  font-size: 14px;
+  color: rgb(188, 187, 187);
+  letter-spacing: -0.3px;
+  word-spacing: 1px;
+  line-height: 23px;
+}
+.Fcontainer ul {
+  padding: 0%;
+}
+.Fcontainer li {
+  list-style: none;
+}
+.Fcontainer li a {
+  text-decoration: none;
+  color: dimgray;
+}
+.FCbox1 {
+  width: 20%;
+  padding-left: 40px;
+}
+.FCbox1 img {
+  width: 57px;
+  height: 30px;
+}
+.FCbox2 {
+  width: 20%;
+  color: #fff;
+}
+.FCbox3 {
+  width: 20%;
+  color: #fff;
+}
+.FCbox3 p {
+  line-height: 14px;
+  word-spacing: -0.5px;
+}
+.FCbox4 {
+  width: 20%;
+  color: #fff;
+}
+.FCbox4 form {
+  width: 100%;
+  box-sizing: border-box;
+}
+.FCbox4 input {
+  width: 84%;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: dimgray;
+  font-size: 13px;
+  border-radius: 5px;
+  border: none;
+}
+.FCbox4 button {
+  font-size: 12px;
+  padding: 9px 20px;
+  border-radius: 4px;
+  background-color: #08cddf;
+  border: none;
+}
+.FCbox4 button:hover {
+  background-color: #06daed;
+}
+
+/* --------End ---------*/
+
+
+.Econtainer {
+  width: 80%;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(128, 128, 128, 0.622);
+}
+.Eleft {
+  display: inline-block;
+  padding-left: 40px;
+}
+.Eleft p {
+  font-size: 14px;
+  color: rgb(188, 187, 187);
+  letter-spacing: -0.3px;
+  word-spacing: 1px;
+}
+.Eright {
+  display: inline-block;
+}
+.ERcontainer {
+  display: flex;
+}
+.ERCbox {
+  width: 34px;
+  height: 34px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.67);
+  background-color: rgba(255, 255, 255, 0.085);
+  border-radius: 50%;
+  font-size: 15px;
+  margin-right: 10px;
+}
+
+/* ------------------Respoinsive code------------------------  */
+
+@media(max-width:1275px){
+
+  /* sectionD */
+  .SDCbox {
+    width: 280px;
+  }
+}
+
+@media(max-width:1200px){
+
+  /* sectionD */
+  .SDCbox {
+    width: 260px;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* ---nav--- */
+
+  .nav {
+    width: 80%;
+  }
+
+  /* --mainNav--- */
+
+  .mainNav {
+    width: 80%;
+  }
+
+  /* --sectionB--- */
+
+  .sectionB {
+    width: 84%;
+    padding: 100px 20px;
+  }
+  .sectionB p {
+    font-size: 13px;
+    letter-spacing: -0.2px;
+    word-spacing: 0.5px;
+  }
+  .SBleft {
+    width: 50%;
+  }
+  .SBleft h3 {
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 33px;
+    margin-bottom: 12px;
+  }
+
+  .SBleft p {
+    font-size: 12px;
+    line-height: 22px;
+    word-spacing: -1.2px;
+  }
+
+  .SBright {
+    width: 50%;
+  }
+  .SBimageBox {
+    max-width: 400px;
+    height: 250px;
+  }
+  .SBimageBox img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  /* ----------sectionC -------------- */
+
+.sectionC {
+  width: 100%;
+  padding: 50px 0;
+}
+.sectionC h6 {
+  font-size: 14px;
+  margin: 0;
+  padding: 15px 0;
+}
+.sectionC h3 {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.SAcontainer {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.SCCbox {
+  width: 200px;
+}
+.SCCimg{
+  width: 40px;
+  height: 40px;
+}
+.SCCbox p {
+  font-size: 14px;
+}
+
+  /* --sectionD--- */
+
+  .sectionD {
+    width: 100%;
+    padding-bottom: 30px;
+  }
+  .SDheader {
+    width: 88%;
+    padding: 45px 0;
+  }
+  .SDcontainer {
+    width: 88%;
+  }
+  
+    .SDCbox {
+      width: 250px;
+    }
+  
+  /* ---sectionE--- */
+
+  .SElogoBox {
+    padding: 60px 0px;
+    margin: 0px 28px;
+  }
+
+  /* ---footer--- */
+
+  .FCbox1 {
+    width: 12%;
+    padding-left: 0px;
+  }
+
+  .FCbox2 {
+    width: 25%;
+  }
+  .FCbox3 {
+    width: 20%;
+    padding-left: 30px;
+  }
+  .FCbox3 p {
+    line-height: 13px;
+    word-spacing: -0.7px;
+  }
+  .FCbox4 {
+    width: 20%;
+  }
+}
+
+@media (max-width: 850px) {
+
+  /* ---sectionB--- */
+
+  .SBimageBox {
+    padding-top: 50px;
+  }
+
+  /* ---sectionD--- */
+
+  .SDheader {
+    padding: 45px 0;
+  }
+  .SDcontainer {
+    width: 88%;
+  }
+  .SDCbox {
+    width: 260px;
+  }
+
+  /* ---sectionE--- */
+
+  .SEcontainer {
+    width: 88%;
+  }
+  .SElogoBox {
+    width: 90px;
+    padding: 45px 0px;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 835px) {
+
+  /* ---sectionB--- */
+
+  .sectionB p {
+    font-size: 13px;
+    letter-spacing: -0.2px;
+    word-spacing: 0.5px;
+  }
+
+  .SBleft h3 {
+    font-size: 21px;
+    font-weight: bold;
+    line-height: 31px;
+    margin-bottom: 12px;
+  }
+  .SBleft p {
+    font-size: 12px;
+    line-height: 22px;
+    word-spacing: -1.8px;
+  }
+  .SBimageBox {
+    max-width: 400px;
+    height: 250px;
+    padding-top: 50px;
+  }
+
+
+  /* ----------sectionC -------------- */
+
+.sectionC {
+  width: 100%;
+  padding: 50px 0;
+}
+.sectionC h6 {
+  font-size: 14px;
+  margin: 0;
+  padding: 15px 0;
+}
+.sectionC h3 {
+  font-size: 23px;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 40px;
+}
+.SCCbox {
+  width: 180px;
+}
+.SCCimg{
+  width: 40px;
+  height: 40px;
+}
+.SCCbox p {
+  font-size: 14px;
+}
+}
+
+@media (max-width: 767px) {
+
+  /* ---nav--- */
+
+  .nav {
+    height: 30px;
+  }
+
+  /* --mainNav--- */
+
+  .mNavRight-1 {
+    display: none;
+  }
+  .navberIcon {
+    display: block;
+    color: dimgray;
+  }
+
+  /* ---sectionA--- */
+
+  .SAimageBox {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(51, 63, 82) !important;
+    z-index: 2 !important;
+  }
+  .SAimage {
+    width: 100% !important;
+    /* height: !important; */
+    opacity: 50% !important;
+  }
+  .SAcontext {
+    bottom: 100;
+    display: block !important;
+  }
+  .SAcontext h1 {
+    font-size: 40px !important;
+  }
+  .SAbtn {
+    background-color: inherit;
+    color: #fff;
+    font-size: 14px;
+  }
+  .SAsliderBox {
+    padding: 10px;
+  }
+
+  /* --sectionB--- */ /*I am not copypast this part. They all are changing */
+
+  .sectionB {
+    width: 85%;
+    padding: 60px 20px;
+  }
+  .sectionB p {
+    font-size: 14px;
+    letter-spacing: -0.3px;
+    word-spacing: 1px;
+  }
+  .SBleft {
+    width: 100%;
+    display: block;
+  }
+  .SBleft h3 {
+    font-size: 25px;
+    line-height: 35px;
+    margin-bottom: 20px;
+  }
+
+  .SBleft p {
+    font-size: 13px;
+    line-height: 23px;
+    word-spacing: -1px;
+  }
+  .btn1 {
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+  .SBright {
+    width: 100%;
+    display: block;
+  }
+  .SBimageBox {
+    max-width: 420px;
+    height: 250px;
+    margin: auto;
+    margin-top: 40px;
+    padding-top: 0px;
+  }
+  .SBimageBox img {
+    width: 100%;
+  }
+
+  /* sectionE */
+
+  .SElogoBox {
+    width: 90px;
+  }
+
+  /* ---footer--- */
+
+  .Fcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    color: #06daed;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+  .FCbox1 {
+    width: 30%;
+    padding-left: 30px;
+    padding-top: 20px;
+    margin: 0 auto;
+  }
+
+  .FCbox2 {
+    width: 50%;
+    text-align: left;
+    margin: 0 auto;
+  }
+  .FCbox3 {
+    width: 30%;
+    padding-left: 40px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  .FCbox3 p {
+    line-height: 14px;
+    word-spacing: -0.5px;
+  }
+  .FCbox4 {
+    width: 50%;
+    margin: 0 auto;
+    padding-right: 20px;
+  }
+  .FCbox4 input {
+    width: 64%;
+    display: block;
+    margin-bottom: 10px;
+  }
+}
+
+@media(max-width:740px){
+
+  
+  /* ----------sectionC -------------- */
+
+
+.sectionC h6 {
+  padding: 15px 0;
+}
+.sectionC h3 {
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+.SCCbox {
+  width: 150px;
+}
+.SCCimg{
+  width: 38px;
+  height: 38px;
+}
+.SCCbox p {
+  font-size: 13px;
+}
+
+}
+@media (max-width: 685px) {
+  /* sectionD */
+
+  .SDCbox {
+    width: 200px;
+    margin: 10px;
+  }
+}
+
+@media(max-width:617px){
+
+    /* ----------sectionC -------------- */
+
+    .sectionC h6 {
+      padding: 15px 0;
+    }
+    .sectionC h3 {
+      font-size: 23px;
+      margin-bottom: 20px;
+    }
+    .SCCbox {
+      width: 250px;
+    }
+    .SCCimg{
+      width: 50px;
+      height: 50px;
+    }
+    .SCCbox p {
+      font-size: 15px;
+    }
+}
+
+@media (max-width: 600px) {
+
+  /* --sectionA--- */
+
+  .SAimageBox {
+    height: 350px;
+  }
+  .SAimage {
+    height: 100%;
+  }
+  .SAcontext {
+    bottom: 120px;
+  }
+
+  /* sectionE */
+
+  .SElogoBox {
+    width: 90px;
+  }
+}
+
+@media (max-width: 530px) {
+  /* nav */
+
+  .nav {
+    width: 89%;
+  }
+}
+
+@media(max-width:507px){
+
+  /* ----------sectionC -------------- */
+  
+  .SCCbox {
+    width: 200px;
+  }
+  .SCCimg{
+    width: 40px;
+    height: 40px;
+  }
+  .SCCbox p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .sectionB {
+    width: 87%;
+    padding: 30px 0px;
+  }
+  .sectionB p {
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    word-spacing: 1px;
+  }
+  .SBleft {
+    width: 100%;
+    display: block;
+  }
+  .SBleft h3 {
+    font-size: 23px;
+    line-height: 32px;
+    margin-bottom: 17px;
+  }
+
+  .SBleft p {
+    font-size: 13px;
+    line-height: 23px;
+    word-spacing: -1px;
+  }
+  .SBimageBox {
+    max-width: 420px;
+    height: 250px;
+    margin-top: 40px;
+  }
+  .SBimageBox img {
+    width: 100%;
+  }
+
+  /* sectionD */
+
+  .SDheader {
+    width: 85%;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+    padding: 10px 0;
+  }
+  .SDHleft {
+    display: block;
+  }
+
+  .SDHleft h3 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .SDHbtn {
+    font-size: 14px;
+  }
+  .SDCbox {
+    width: 150px;
+  }
+
+  /* ---sectionE--- */
+
+  .SEcontainer {
+    width: 100%;
+    height: 120px;
+    padding: 0 15px;
+  }
+
+  .SElogoBox {
+    width: 90px;
+    padding: 0px 0px;
+    margin: 0px 10px;
+  }
+  .SElogoBox img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 474px) {
+
+  /* ---nav--- */
+
+  .nav {
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: flex-start;
+  }
+  .navLeft {
+    display: block;
+    padding: 5px;
+  }
+  .navLeft2 {
+    display: block;
+    padding: 5px 0;
+  }
+  .navRight ul {
+    padding: 0;
+    padding-bottom: 10px;
+  }
+  .navRight ul li {
+    padding-left: 5px;
+  }
+
+  /* --mainNav--- */
+
+  .mainNav {
+    width: 85%;
+  }
+  .mNavRight-2 {
+    font-size: 30px;
+    padding-right: 10px;
+  }
+
+  /* --sectionA--- */
+
+  .SAimageBox {
+    height: 300px;
+  }
+
+  .SAcontext {
+    max-width: 100% !important;
+    bottom: 90px;
+  }
+  .SAcontext h1 {
+    font-size: 30px !important;
+    z-index: 3 !important;
+    letter-spacing: 1px !important;
+  }
+  .SAbtn {
+    font-size: 12px;
+  }
+  /* ---footer--- */
+
+  .Fcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: #06daed;
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
+  .FCbox1 {
+    width: 90%;
+    padding-left: 15px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+  }
+  .FCbox2 {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto;
+    padding-bottom: 15px;
+  }
+  .FCbox3 {
+    width: 90%;
+    padding-left: 20px;
+    text-align: left;
+    margin: 0;
+    padding-bottom: 15px;
+  }
+  .FCbox3 p {
+    line-height: 14px;
+    word-spacing: -0.5px;
+  }
+  .FCbox4 {
+    width: 90%;
+    margin: 0 auto;
+    padding-right: 0px;
+    padding-left: 20px;
+  }
+  .FCbox4 input {
+    width: 84%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  /* ---end--- */
+
+  .Econtainer {
+    width: 80%;
+    height: auto;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(128, 128, 128, 0.622);
+  }
+  .Eleft {
+    display: block;
+    width: 90%;
+    padding-left: 0px;
+    padding-top: 20px;
+    text-align: center;
+  }
+  .Eleft p {
+    font-size: 12px;
+  }
+  .Eright {
+    padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 405px) {
+
+  /* sectionA */
+
+  .SAcontext p {
+    font-size: 12px;
+    letter-spacing: -0.5px;
+  }
+  .SAcontext h1 {
+    font-size: 25px !important;
+    letter-spacing: -0.5px !important;
+  }
+  .SAbtn {
+    font-size: 12px;
+  }
+
+  /* ----------sectionC -------------- */
+  
+  .SCCbox {
+    max-width: 150px;
+    padding: 15px 0;
+  }
+  .SCCimg{
+    width: 35px;
+    height: 35px;
+  }
+  .SCCbox p {
+    font-size: 13px;
+    letter-spacing: -1px;
+    word-spacing: -2px;
+  }
+
+}
+
+@media (max-width: 386px) {
+
+  /* sectionB */
+
+  .sectionB {
+    width: 87%;
+    padding: 30px 0px;
+    padding-bottom: 20px;
+  }
+  .sectionB p {
+    font-size: 12px;
+    letter-spacing: -0.3px;
+    word-spacing: 1px;
+  }
+  .SBleft {
+    width: 100%;
+    display: block;
+  }
+  .SBleft h3 {
+    font-size: 21px;
+    line-height: 32px;
+    margin-bottom: 17px;
+  }
+
+  .SBleft p {
+    font-size: 12px;
+    line-height: 23px;
+    word-spacing: -1px;
+  }
+  .SBimageBox {
+    max-width: 420px;
+    height: 200px;
+    margin-top: 40px;
+  }
+  .SBimageBox img {
+    width: 100%;
+  }
+
+  /* sectionD */
+
+  .SDCbox {
+    width: 230px;
+    margin: 15px 0;
+  }
+
+  /* ---sectionE--- */
+
+  .SEcontainer {
+    height: 100px;
+  }
+
+  .SElogoBox {
+    width: 100px;
+    margin: 0 5px;
+  }
+}
+
+@media (max-width: 350px) {
+  
+  /* sectionB */
+
+  .SBleft h3 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -1px;
+    word-spacing: -1px;
+    margin-bottom: 17px;
+  }
+  .SBleft p {
+    font-size: 12px;
+    letter-spacing: -0.7px;
+    line-height: 21px;
+    word-spacing: 1px;
+  }
+}
+
+@media(max-width:307px){
+
+  /* ----------sectionC -------------- */
+  
+  .SCCbox {
+    max-width: 130px;
+    padding: 15px 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .SCCimg{
+    width: 30px;
+    height: 30px;
+  }
+  .SCCbox p {
+    font-size: 12px;
+    letter-spacing: -1px;
+    word-spacing: -3px;
+  }
+
+}
+
