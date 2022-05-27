@@ -312,7 +312,9 @@ body {
   padding: 8px 18px;
 }
 .btn1:hover {
-  background-color: #06daed;
+  border: 1px   solid dimgray;
+  background-color: #eeeeee;
+  color: black;
 }
 .SBright {
   width: 50%;
@@ -557,7 +559,9 @@ body {
   border: none;
 }
 .FCbox4 button:hover {
-  background-color: #06daed;
+  border: 1px   solid black;
+  background-color: #eeeeee;
+  color: black;
 }
 
 /* --------End ---------*/
